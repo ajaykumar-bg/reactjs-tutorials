@@ -68,3 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### `npm install i18next react-i18next` React Localization with i18next | Add Multi-Language Support in React
+
+What You'll Learn:
+Setting up react-i18next in a React project.
+Configuring and managing multiple languages.
+Switching between languages dynamically.
+Implementing language detection in React.
+
+Reference video here: [https://www.youtube.com/watch?v=r5uDYl6NnkY](https://www.youtube.com/watch?v=r5uDYl6NnkY)
+Docs: [https://react.i18next.com/getting-started](https://react.i18next.com/getting-started)
