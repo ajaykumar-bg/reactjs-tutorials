@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import LanguageSelector from './LanguageSelector';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 
 function App() {
 	const { t, i18n, ready } = useTranslation();
@@ -13,7 +13,10 @@ function App() {
 		return (
 			<div className='App'>
 				<header className='App-header'>
-					<LanguageSelector pOnChange={changeLanguage} />
+					<LanguageSelector
+						pCurrentLang={i18n.language}
+						pOnChange={changeLanguage}
+					/>
 					<img src={logo} className='App-logo' alt='logo' />
 					<p>{t('welcomeMessage')}</p>
 					<a
@@ -24,8 +27,12 @@ function App() {
 					>
 						{t('subtitle')}
 					</a>
-					<p>{t('profile')}</p>
-					<p>{t('settings')}</p>
+					<p>
+						<Trans i18nKey='settings'></Trans>
+					</p>
+					<p>
+						<Trans i18nKey='profile'></Trans>
+					</p>
 				</header>
 			</div>
 		);

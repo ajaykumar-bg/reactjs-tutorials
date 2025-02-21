@@ -1,10 +1,10 @@
 import React from 'react';
 
 function LanguageSelector(props) {
-	const { pOnChange } = props;
+	const { pCurrentLang, pOnChange } = props;
 	return (
 		<div>
-			<select onChange={(e) => pOnChange(e.target.value)}>
+			<select value={pCurrentLang} onChange={(e) => pOnChange(e.target.value)}>
 				<option value='en'>English</option>
 				<option value='es'>Spanish</option>
 			</select>
