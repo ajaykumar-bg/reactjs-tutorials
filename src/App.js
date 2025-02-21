@@ -2,7 +2,6 @@ import logo from './logo.svg';
 import './App.css';
 import LanguageSelector from './LanguageSelector';
 import { useTranslation } from 'react-i18next';
-import './i18n';
 
 function App() {
 	const { t, i18n, ready } = useTranslation();
